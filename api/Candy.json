@@ -1,0 +1,72 @@
+{
+	"store": [
+		{
+			"id": 1,
+			"name": "Green Hills",
+			"address": "10 Green Hills Circle"
+		},
+		{
+			"id": 2,
+			"name": "12 South",
+			"address": "1212 12th Ave South"
+		}
+	],
+	"employees": [
+		{
+			"id": 1,
+			"name": "Jon Johnson"
+		},
+		{
+			"id": 2,
+			"name": "Steve Stevens"
+		},
+		{
+			"id": 3,
+			"name": "James Jameson"
+		},
+		{
+			"id": 4,
+			"name": "JoJo Johnson"
+		}
+	],
+	"CandyTypes": [
+		{
+			"id": 1,
+			"name": "chocolate"
+		},
+		{
+			"id": 2,
+			"name": "fruit"
+		},
+		{
+			"id": 3,
+			"name": "sour"
+		},
+		{
+			"id": 4,
+			"name": "sweet"
+		}
+	],
+	"CandyList": [
+		{
+			"id": 1,
+			"name": "Sugar Circles",
+			"candyTypeId": 4
+		},
+		{
+			"id": 2,
+			"name": "Sour Squares",
+			"candyTypeId": 3
+		},
+		{
+			"id": 3,
+			"name": "Plum Pop",
+			"candyTypeId": 2
+		},
+		{
+			"id": 4,
+			"name": "CoCo Krack",
+			"candyTypeId": 1
+		}
+	]
+}
