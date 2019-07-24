@@ -1,72 +1,67 @@
 {
-	"stores": [
-		{
-			"id": 1,
-			"name": "Green Hills",
-			"address": "10 Green Hills Circle"
-		},
-		{
-			"id": 2,
-			"name": "12 South",
-			"address": "1212 12th Ave South"
-		}
-	],
-	"employees": [
-		{
-			"id": 1,
-			"name": "Jon Johnson"
-		},
-		{
-			"id": 2,
-			"name": "Steve Stevens"
-		},
-		{
-			"id": 3,
-			"name": "James Jameson"
-		},
-		{
-			"id": 4,
-			"name": "JoJo Johnson"
-		}
-	],
-	"candy_types": [
-		{
-			"id": 1,
-			"name": "chocolate"
-		},
-		{
-			"id": 2,
-			"name": "fruit"
-		},
-		{
-			"id": 3,
-			"name": "sour"
-		},
-		{
-			"id": 4,
-			"name": "sweet"
-		}
-	],
-	"candy_list": [
-		{
-			"id": 1,
-			"name": "Sugar Circles",
-			"candy_typeId": 4
-		},
-		{
-			"id": 2,
-			"name": "Sour Squares",
-			"candy_typeId": 3
-		},
-		{
-			"id": 3,
-			"name": "Plum Pop",
-			"candy_typeId": 2
-		},
-		{
-			"id": 4,
-			"name": "CoCo Krack",
-			"candy_typeId": 1
-		}
-	]
+  "stores": [
+    {
+      "id": 1,
+      "name": "Green Hills",
+      "address": "10 Green Hills Circle"
+    },
+    {
+      "id": 2,
+      "name": "12 South",
+      "address": "1212 12th Ave South"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Jon Johnson"
+    },
+    {
+      "id": 2,
+      "name": "Steve Stevens"
+    },
+    {
+      "id": 3,
+      "name": "James Jameson"
+    },
+    {
+      "id": 4,
+      "name": "JoJo Johnson"
+    }
+  ],
+  "candy_types": [
+    {
+      "id": 1,
+      "name": "chocolate"
+    },
+    {
+      "id": 2,
+      "name": "fruit"
+    },
+    {
+      "id": 3,
+      "name": "sour"
+    },
+    {
+      "id": 4,
+      "name": "sweet"
+    }
+  ],
+  "candy_list": [
+    {
+      "id": 2,
+      "name": "Sour Squares",
+      "candy_typeId": 3
+    },
+    {
+      "id": 3,
+      "name": "Plum Pop",
+      "candy_typeId": 2
+    },
+    {
+      "id": 4,
+      "name": "CoCo Krack",
+      "candy_typeId": 1
+    }
+  ]
 }

@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-// import Image from "./Components/Layout/Image"
 
 export default class CandyList extends Component {
 	render() {
@@ -10,7 +9,6 @@ export default class CandyList extends Component {
 					<div key={candy.id} className="card">
 						<div className="card-body">
 							<div className="card-title">
-								{/* <image src={candy} className="candy-icon" /> */}
 								<h5>Candy Name</h5>
 								<button
 									onClick={() => this.props.deleteCandy(candy.id)}
