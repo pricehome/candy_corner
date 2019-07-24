@@ -1,5 +1,5 @@
 {
-	"store": [
+	"stores": [
 		{
 			"id": 1,
 			"name": "Green Hills",
@@ -29,7 +29,7 @@
 			"name": "JoJo Johnson"
 		}
 	],
-	"CandyTypes": [
+	"candy_types": [
 		{
 			"id": 1,
 			"name": "chocolate"
@@ -47,26 +47,26 @@
 			"name": "sweet"
 		}
 	],
-	"CandyList": [
+	"candy_list": [
 		{
 			"id": 1,
 			"name": "Sugar Circles",
-			"candyTypeId": 4
+			"candy_typeId": 4
 		},
 		{
 			"id": 2,
 			"name": "Sour Squares",
-			"candyTypeId": 3
+			"candy_typeId": 3
 		},
 		{
 			"id": 3,
 			"name": "Plum Pop",
-			"candyTypeId": 2
+			"candy_typeId": 2
 		},
 		{
 			"id": 4,
 			"name": "CoCo Krack",
-			"candyTypeId": 1
+			"candy_typeId": 1
 		}
 	]
 }

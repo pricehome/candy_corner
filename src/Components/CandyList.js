@@ -5,19 +5,14 @@ export default class CandyList extends Component {
 		return (
 			<section className="candies">
 				<h1>Candy List</h1>
-				{this.props.CandyList.map(candy => (
-					<div key={this.props.CandyList.id}>
-						<article>{candy}</article>
+				{this.props.candyList.map(candy => (
+					<div key={candy.id}>
+						{" "}
+						className
 						<div>
 							Candy:
 							{candy.name}
-						</div>
-						<div>
-							Type:
-							{
-								this.props.CandyType.find(type => type.id === candy.candyTypeId)
-									.type
-							}
+							{candy.candy_type.name}
 						</div>
 					</div>
 				))}

@@ -5,9 +5,9 @@ export default class EmployeeList extends Component {
 		return (
 			<section className="employee">
 				<h1>Employee List</h1>
-				{this.props.EmployeeList.map(employee => (
-					<div key={this.props.EmployeeList.id}>
-						<article>{employee}</article>
+				{this.props.employeeList.map(employee => (
+					<div key={employee.id}>
+						<article>{employee.name}</article>
 					</div>
 				))}
 			</section>

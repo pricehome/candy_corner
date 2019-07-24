@@ -6,10 +6,10 @@ import CandyList from "./CandyList"
 
 export default class ApplicationViews extends Component {
 	state = {
-		LocationList: [],
-		EmployeeList: [],
-		CandyType: [],
-		CandyList: []
+		stores: [],
+		employees: [],
+		candy_types: [],
+		candy_list: []
 	}
 
 	componentDidMount() {
@@ -17,23 +17,27 @@ export default class ApplicationViews extends Component {
 
 		fetch("http://localhost:5002/employees")
 			.then(r => r.json())
-			.then(employee => (newState.employee = employee))
-			.then(() => fetch("http://localhost:5002/CandyList").then(r => r.json()))
-			.then(candies => (newState.candies = candies))
-			.then(() => fetch("http://localhost:5002/store").then(r => r.json()))
-			.then(store => (newState.candies = store))
+			.then(employees => (newState.employees = employees))
+			.then(() =>
+				fetch("http://localhost:5002/candy_list?_expand=candy_type").then(r =>
+					r.json()
+				)
+			)
+			.then(candies => (newState.candy_list = candies))
+			.then(() => fetch("http://localhost:5002/stores").then(r => r.json()))
+			.then(stores => (newState.stores = stores))
 			.then(() => this.setState(newState))
 	}
 	deleteCandy = id => {
-		return fetch(`http://localhost:5002/CandyList/${id}`, {
+		return fetch(`http://localhost:5002/candy_list/${id}`, {
 			method: "DELETE"
 		})
 			.then(e => e.json())
-			.then(() => fetch(`http://localhost:5002/CandyList`))
+			.then(() => fetch(`http://localhost:5002/candy_list`))
 			.then(e => e.json())
-			.then(CandyList =>
+			.then(candylist =>
 				this.setState({
-					CandyList: CandyList
+					candy_list: candylist
 				})
 			)
 	}
@@ -45,24 +49,25 @@ export default class ApplicationViews extends Component {
 					exact
 					path="/"
 					render={props => {
-						return <LocationList LocationList={this.state.LocationList} />
+						return <LocationList locationList={this.state.stores} />
 					}}
 				/>
 				<Route
 					exact
 					path="/employees"
 					render={props => {
-						return <EmployeeList EmployeeList={this.state.EmployeeList} />
+						return <EmployeeList employeeList={this.state.employees} />
 					}}
 				/>
 				<Route
 					exact
-					path="/CandyList"
+					path="/candy_list"
 					render={() => {
 						return (
 							<CandyList
 								deleteCandy={this.deleteCandy}
-								CandyList={this.state.CandyList}
+								candyList={this.state.candy_list}
+								candyType={this.state.candy_type}
 							/>
 						)
 					}}
