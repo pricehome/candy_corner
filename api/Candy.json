@@ -32,40 +32,40 @@
 	"candyTypes": [
 		{
 			"id": 1,
-			"name": "chocolate"
+			"name": " chocolate"
 		},
 		{
 			"id": 2,
-			"name": "fruit"
+			"name": " fruit"
 		},
 		{
 			"id": 3,
-			"name": "sour"
+			"name": " sour"
 		},
 		{
 			"id": 4,
-			"name": "sweet"
+			"name": " sweet"
 		}
 	],
 	"CandyList": [
 		{
 			"id": 1,
-			"name": "Sugar Circles",
+			"name": " Sugar Circles: ",
 			"candyTypeId": 4
 		},
 		{
 			"id": 2,
-			"name": "Sour Squares",
+			"name": " Sour Squares: ",
 			"candyTypeId": 3
 		},
 		{
 			"id": 3,
-			"name": "Plum Pop",
+			"name": " Plum Pop: ",
 			"candyTypeId": 2
 		},
 		{
 			"id": 4,
-			"name": "CoCo Krack",
+			"name": " CoCo Krack: ",
 			"candyTypeId": 1
 		}
 	]

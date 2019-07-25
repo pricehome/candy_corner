@@ -13,7 +13,7 @@ export default class CandyList extends Component {
 						<div className="card-body">
 							<div className="card-title">
 								{/* <img src={Image} className="candy-img" alt="peppermint" /> */}
-								<h4>Candy Name</h4>
+								<h5>Candy Name</h5>
 								<button
 									onClick={() => this.props.deleteCandy(candy.id)}
 									className="card-link"
