@@ -5,23 +5,29 @@ class NavBar extends Component {
 	render() {
 		return (
 			<nav className="navbar navbar-light fixed-top light-blue flex-md-nowrap p-0 shadow">
-				<ul className="nav nav-pills">
-					<li className="nav-item">
-						<Link className="nav-link" to="/">
-							Stores
-						</Link>
-					</li>
-					<li className="nav-item">
-						<Link className="nav-link" to="/employees">
-							Employee List
-						</Link>
-					</li>
-					<li className="nav-item">
-						<Link className="nav-link" to="/candy_list">
-							Candy List
-						</Link>
-					</li>
-				</ul>
+				<div className="nav-wrapper">
+					<Link className="brand-logo left">
+						Kandy Korner
+						<i className="large material-icons">face</i>
+					</Link>
+					<ul className="nav nav-pills right">
+						<li className="nav-item">
+							<Link className="nav-link" to="/">
+								Stores
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link className="nav-link" to="/employees">
+								Employee List
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link className="nav-link" to="/candy_list">
+								Candy List
+							</Link>
+						</li>
+					</ul>
+				</div>
 			</nav>
 		)
 	}
