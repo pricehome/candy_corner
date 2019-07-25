@@ -1,6 +1,7 @@
 import {Route} from "react-router-dom"
 import React, {Component} from "react"
 import ApiManager from "../modules/ApiManager"
+// import LocationManager from "../modules/LocationManager"
 import LocationList from "./LocationList"
 import EmployeeList from "./EmployeeList"
 import CandyList from "./CandyList"
@@ -17,13 +18,19 @@ export default class ApplicationViews extends Component {
 	componentDidMount() {
 		const newState = {}
 
+		// LocationManager.getAll("stores").then(stores => {
+		// 	this.setState({
+		// 		stores: stores
+		// 	})
+		// })
+
 		ApiManager.getAll("stores")
 			.then(stores => (newState.stores = stores))
 			.then(() => ApiManager.getAll("employees"))
 			.then(employees => (newState.employees = employees))
-			.then(() => ApiManager.getAll("candy_types"))
+			.then(() => ApiManager.getAll("candyTypes"))
 			.then(candyType => (newState.candy_types = candyType))
-			.then(() => ApiManager.getAllCandy("candy_list"))
+			.then(() => ApiManager.getAllCandy("CandyList"))
 			.then(candies => (newState.candy_list = candies))
 			.then(() => {
 				// console.log(newState);

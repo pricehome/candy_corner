@@ -8,7 +8,7 @@ export default {
 		return fetch(`${remoteURL}/${resource}`).then(e => e.json())
 	},
 	getAllCandy(resource) {
-		return fetch(`${remoteURL}/${resource}?_expand=candy_type`).then(e =>
+		return fetch(`${remoteURL}/${resource}?_expand=candyType`).then(e =>
 			e.json()
 		)
 	}

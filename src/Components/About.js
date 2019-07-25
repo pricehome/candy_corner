@@ -1,11 +1,10 @@
 import React, {Component} from "react"
-import {Link} from "react-router-dom"
 
 export class About extends Component {
 	render() {
 		return (
 			<div>
-				<Link>We are a small, fictitous candy company. </Link>
+				<h2>We are small fictitious candy company!</h2>
 			</div>
 		)
 	}

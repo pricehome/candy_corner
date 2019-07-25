@@ -4,10 +4,10 @@ export default class CandyType extends Component {
 	render() {
 		return (
 			<section className="CandyType">
-				<h1>Candy Type</h1>
+				<h3>Candy Type</h3>
 				<div>
-					{this.props.CandyType.map(CandyType => (
-						<article>{CandyType}</article>
+					{this.props.candyType.map(candyType => (
+						<article>{candyType}</article>
 					))}
 				</div>
 			</section>

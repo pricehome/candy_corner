@@ -29,44 +29,44 @@
 			"name": "JoJo Johnson"
 		}
 	],
-	"candy_types": [
+	"candyTypes": [
 		{
 			"id": 1,
-			"name": "-Chocolate"
+			"name": "chocolate"
 		},
 		{
 			"id": 2,
-			"name": "-Fruit"
+			"name": "fruit"
 		},
 		{
 			"id": 3,
-			"name": "-Sour"
+			"name": "sour"
 		},
 		{
 			"id": 4,
-			"name": "-Sweet"
+			"name": "sweet"
 		}
 	],
-	"candy_list": [
+	"CandyList": [
 		{
 			"id": 1,
-			"name": "Sugar Shots ",
-			"candy_typeId": 4
+			"name": "Sugar Circles",
+			"candyTypeId": 4
 		},
 		{
 			"id": 2,
-			"name": "Sour Squares ",
-			"candy_typeId": 3
+			"name": "Sour Squares",
+			"candyTypeId": 3
 		},
 		{
 			"id": 3,
-			"name": "Plum Pop ",
-			"candy_typeId": 2
+			"name": "Plum Pop",
+			"candyTypeId": 2
 		},
 		{
 			"id": 4,
-			"name": "CoCo Krack ",
-			"candy_typeId": 1
+			"name": "CoCo Krack",
+			"candyTypeId": 1
 		}
 	]
 }

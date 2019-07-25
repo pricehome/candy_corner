@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import NavBar from "./Components/Layout/NavBar"
 import ApplicationViews from "./Components/ApplicationViews"
-import Footer from "./Components/Layout/Footer"
+// import Footer from "./Components/Layout/Footer"
 
 export default class CandyCorner extends Component {
 	render() {
@@ -9,7 +9,7 @@ export default class CandyCorner extends Component {
 			<React.Fragment>
 				<NavBar />
 				<ApplicationViews />
-				<Footer />
+				{/* <Footer /> */}
 			</React.Fragment>
 		)
 	}

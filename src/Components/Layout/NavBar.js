@@ -6,11 +6,8 @@ class NavBar extends Component {
 		return (
 			<nav className="navbar navbar-light fixed-top light-blue flex-md-nowrap p-0 shadow">
 				<div className="nav-wrapper">
-					<Link className="brand-logo left">
-						Kandy Korner
-						<i className="large material-icons">face</i>
-					</Link>
 					<ul className="nav nav-pills right">
+						<li className="nav-item">KandyKorner</li>
 						<li className="nav-item">
 							<Link className="nav-link" to="/">
 								Stores
